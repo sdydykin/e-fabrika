@@ -19,7 +19,7 @@
 		
 		//Копируем файл с картинкой
 		if($image_file_name != "")
-			move_uploaded_file($image_file_tmp, "/var/www/html/e-fabrika.pro/img/$user_id/$image_file_name");
+			move_uploaded_file($image_file_tmp, "$site_root_folder/img/$user_id/$image_file_name");
 		
 		//Сохраняем информацию в БД
 		if(is_numeric($id)) //Редактирование информации о элементе
